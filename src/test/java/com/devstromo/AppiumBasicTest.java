@@ -1,5 +1,6 @@
 package com.devstromo;
 
+import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertNotNull;
 
 import java.io.File;
@@ -13,10 +14,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.options.UiAutomator2Options;
-import io.appium.java_client.service.local.AppiumDriverLocalService;
-import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 public class AppiumBasicTest extends BaseTest {
 
@@ -30,6 +27,10 @@ public class AppiumBasicTest extends BaseTest {
         driver.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']")).click();
         driver.findElement(By.id("android:id/checkbox")).click();
         driver.findElement(By.xpath("(//android.widget.RelativeLayout)[2]")).click();
+        String alertTitle = driver.findElement(By.id("android:id/alertTitle")).getText();
+        assertEquals(alertTitle, "WiFi settings");
+        driver.findElement(By.id("android:id/edit")).sendKeys("AleWifi");
+        driver.findElements(AppiumBy.className("android.widget.Button")).get(1).click();
         //set wifi name
     }
 }

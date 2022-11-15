@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.Duration;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -31,6 +32,9 @@ public class BaseTest {
         options.setApp(file.getAbsolutePath());
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
+        driver.manage()
+            .timeouts()
+            .implicitlyWait(Duration.ofSeconds(10));
 
         service = new AppiumServiceBuilder().withAppiumJS(new File(basePath + "//npm//node_modules//appium//build//lib//main.js"))
             .withIPAddress("127.0.0.1")
