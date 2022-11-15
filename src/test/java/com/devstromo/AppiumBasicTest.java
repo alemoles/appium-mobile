@@ -10,6 +10,7 @@ import java.nio.file.Paths;
 
 import org.testng.annotations.Test;
 
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -21,10 +22,10 @@ public class AppiumBasicTest {
     public void AppiumTest() throws MalformedURLException {
         Path resourceDirectory = Paths.get("src", "test", "resources");
         File file = new File(resourceDirectory + "/ApiDemos-debug.apk");
-
+        String basePath = System.getenv("APPDATA")
+            .replace("\\", "//");
         //start server
-        AppiumDriverLocalService service = new AppiumServiceBuilder().withAppiumJS(
-                new File("C://Users//Alejamdro//AppData//Roaming//npm//node_modules//appium//build//lib//main.js"))
+        AppiumDriverLocalService service = new AppiumServiceBuilder().withAppiumJS(new File(basePath + "//npm//node_modules//appium//build//lib//main.js"))
             .withIPAddress("127.0.0.1")
             .usingPort(4723)
             .build();
@@ -38,6 +39,9 @@ public class AppiumBasicTest {
         AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
 
         //Actual automation
+        // Xpath, id, accessibilityId, classname, androidUIAutomator
+        driver.findElement(AppiumBy.accessibilityId("Preference")).click();
+
         driver.quit();
         // stop server
         service.stop();
