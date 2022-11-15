@@ -8,6 +8,8 @@ import java.net.URL;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import org.openqa.selenium.By;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
@@ -16,34 +18,18 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
-public class AppiumBasicTest {
+public class AppiumBasicTest extends BaseTest {
 
     @Test
-    public void AppiumTest() throws MalformedURLException {
-        Path resourceDirectory = Paths.get("src", "test", "resources");
-        File file = new File(resourceDirectory + "/ApiDemos-debug.apk");
-        String basePath = System.getenv("APPDATA")
-            .replace("\\", "//");
-        //start server
-        AppiumDriverLocalService service = new AppiumServiceBuilder().withAppiumJS(new File(basePath + "//npm//node_modules//appium//build//lib//main.js"))
-            .withIPAddress("127.0.0.1")
-            .usingPort(4723)
-            .build();
-        service.start();
-        // AndroidDriver
-        // Appium code -> Appium Server -> Mobile
-        UiAutomator2Options options = new UiAutomator2Options();
-        options.setDeviceName("Nexus 5 API 24");
-        options.setApp(file.getAbsolutePath());
-
-        AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
-
+    public void WifiSettingsName() {
         //Actual automation
         // Xpath, id, accessibilityId, classname, androidUIAutomator
-        driver.findElement(AppiumBy.accessibilityId("Preference")).click();
-
-        driver.quit();
-        // stop server
-        service.stop();
+        driver.findElement(AppiumBy.accessibilityId("Preference"))
+            .click();
+        // tagName[@attribute='value']
+        driver.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']")).click();
+        driver.findElement(By.id("android:id/checkbox")).click();
+        driver.findElement(By.xpath("(//android.widget.RelativeLayout)[2]")).click();
+        //set wifi name
     }
 }
