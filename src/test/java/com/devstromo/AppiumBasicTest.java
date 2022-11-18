@@ -4,20 +4,9 @@ import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertNotNull;
 import static org.testng.AssertJUnit.assertTrue;
 
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebElement;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumBy;
 
@@ -60,6 +49,19 @@ public class AppiumBasicTest extends BaseTest {
         String menuText = driver.findElement(AppiumBy.id("android:id/title"))
             .getText();
         assertEquals("Sample menu", menuText);
-        assertTrue(driver.findElement(AppiumBy.id("android:id/title")).isDisplayed());
+        assertTrue(driver.findElement(AppiumBy.id("android:id/title"))
+            .isDisplayed());
+    }
+
+    @Test
+    public void ScrollDemoTest() throws InterruptedException {
+        driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Views\"));"));
+        driver.findElement(AppiumBy.accessibilityId("Views"))
+            .click();
+        // where to scroll is known prior
+        // driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"WebView\"));"));
+
+        // not prior idea
+        scrollToEndAction();
     }
 }

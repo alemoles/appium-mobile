@@ -7,7 +7,6 @@
     <list default="true" id="4084ee35-0db8-4812-a982-dc9ed213314a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/devstromo/AppiumBasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devstromo/AppiumBasicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/devstromo/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devstromo/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,25 +32,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/UDEMY/appium-mobile-testing/appium-mobile/src/test/resources",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/UDEMY/appium-mobile-testing/appium-mobile/src/test/resources&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\WORK\PROYECTOS\UDEMY\appium-mobile-testing\appium-mobile\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AppiumBasicTest.LongPressGesture">
+  <component name="RunManager" selected="TestNG.AppiumBasicTest.ScrollDemoTest">
     <configuration name="AppiumBasicTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="appium-mobile" />
       <extension name="coverage">
@@ -87,8 +86,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppiumBasicTest.ScrollDemoTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="appium-mobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.AppiumBasicTest" />
+      <option name="METHOD_NAME" value="ScrollDemoTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AppiumBasicTest.ScrollDemoTest" />
         <item itemvalue="TestNG.AppiumBasicTest.LongPressGesture" />
         <item itemvalue="TestNG.AppiumBasicTest" />
       </list>
@@ -109,7 +127,8 @@
       <workItem from="1668379259267" duration="381000" />
       <workItem from="1668472793433" duration="5358000" />
       <workItem from="1668552006144" duration="1108000" />
-      <workItem from="1668636043873" duration="3469000" />
+      <workItem from="1668636043873" duration="4302000" />
+      <workItem from="1668727855697" duration="1911000" />
     </task>
     <task id="LOCAL-00001" summary="initial message">
       <created>1667605630997</created>
@@ -146,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668553090507</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="long press">
+      <created>1668640177630</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668640177630</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +183,7 @@
     <MESSAGE value="appium starting/ending server from test" />
     <MESSAGE value="select preferences" />
     <MESSAGE value="assert alert dialog in wifi settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="assert alert dialog in wifi settings" />
+    <MESSAGE value="long press" />
+    <option name="LAST_COMMIT_MESSAGE" value="long press" />
   </component>
 </project>
