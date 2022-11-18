@@ -64,6 +64,11 @@ public class BaseTest {
         } while (canScrollMore);
     }
 
+    public void swipeAction(WebElement element, String direction) {
+        ((JavascriptExecutor) driver).executeScript("mobile: swipeGesture",
+            ImmutableMap.of("elementId", ((RemoteWebElement) element).getId(), "direction", direction, "percent", 0.25));
+    }
+
     @AfterClass
     public void tearDown() {
         driver.quit();

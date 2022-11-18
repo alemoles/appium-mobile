@@ -5,8 +5,12 @@ import static org.testng.AssertJUnit.assertNotNull;
 import static org.testng.AssertJUnit.assertTrue;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.annotations.Test;
+
+import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumBy;
 
@@ -63,5 +67,26 @@ public class AppiumBasicTest extends BaseTest {
 
         // not prior idea
         scrollToEndAction();
+    }
+
+    @Test
+    public void SwipeDemoTest() throws InterruptedException {
+        driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Views\"));"));
+        driver.findElement(AppiumBy.accessibilityId("Views"))
+            .click();
+        driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Gallery\"));"));
+        driver.findElement(AppiumBy.accessibilityId("Gallery"))
+            .click();
+        driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='1. Photos']"))
+            .click();
+
+        WebElement firstImage = driver.findElement(By.xpath("(//android.widget.ImageView)[1]"));
+        assertEquals("true", driver.findElement(AppiumBy.xpath("(//android.widget.ImageView)[1]"))
+            .getAttribute("focusable"));
+        // Swipe
+        swipeAction(firstImage, "left");
+
+        assertEquals("false", driver.findElement(AppiumBy.xpath("(//android.widget.ImageView)[1]"))
+            .getAttribute("focusable"));
     }
 }
