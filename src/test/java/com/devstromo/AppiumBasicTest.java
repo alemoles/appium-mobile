@@ -32,16 +32,16 @@ public class AppiumBasicTest extends BaseTest {
         String alertTitle = driver.findElement(By.id("android:id/alertTitle"))
             .getText();
         assertEquals(alertTitle, "WiFi settings");
+        //set wifi name
         driver.findElement(By.id("android:id/edit"))
             .sendKeys("AleWifi");
         driver.findElements(AppiumBy.className("android.widget.Button"))
             .get(1)
             .click();
-        //set wifi name
     }
 
     @Test
-    public void LongPressGesture() throws InterruptedException {
+    public void LongPressGesture() {
         driver.findElement(AppiumBy.accessibilityId("Views"))
             .click();
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='Expandable Lists']"))
@@ -58,7 +58,7 @@ public class AppiumBasicTest extends BaseTest {
     }
 
     @Test
-    public void ScrollDemoTest() throws InterruptedException {
+    public void ScrollDemoTest() {
         driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Views\"));"));
         driver.findElement(AppiumBy.accessibilityId("Views"))
             .click();
@@ -70,7 +70,7 @@ public class AppiumBasicTest extends BaseTest {
     }
 
     @Test
-    public void SwipeDemoTest() throws InterruptedException {
+    public void SwipeDemoTest() {
         driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Views\"));"));
         driver.findElement(AppiumBy.accessibilityId("Views"))
             .click();
@@ -88,5 +88,21 @@ public class AppiumBasicTest extends BaseTest {
 
         assertEquals("false", driver.findElement(AppiumBy.xpath("(//android.widget.ImageView)[1]"))
             .getAttribute("focusable"));
+    }
+
+    @Test
+    public void DragDropTest() throws InterruptedException {
+        driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Views\"));"));
+        driver.findElement(AppiumBy.accessibilityId("Views"))
+            .click();
+        driver.findElement(AppiumBy.accessibilityId("Drag and Drop"))
+            .click();
+        WebElement source = driver.findElement(By.id("io.appium.android.apis:id/drag_dot_1"));
+        ((JavascriptExecutor) driver).executeScript("mobile: dragGesture",
+            ImmutableMap.of("elementId", ((RemoteWebElement) source).getId(), "endX", 739, "endY", 633));
+        Thread.sleep(3000);
+        String result = driver.findElement(AppiumBy.id("io.appium.android.apis:id/drag_result_text"))
+            .getText();
+        assertEquals("Dropped!", result);
     }
 }
