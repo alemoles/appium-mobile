@@ -50,7 +50,25 @@
       <recent name="D:\WORK\PROYECTOS\UDEMY\appium-mobile-testing\appium-mobile\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AppiumBasicTest.MiscellaneousTest">
+  <component name="RunManager" selected="TestNG.AppiumBasicTest.MiscellaneousAppPackageAndActivityTest">
+    <configuration name="AppiumBasicTest.MiscellaneousAppPackageAndActivityTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="appium-mobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.AppiumBasicTest" />
+      <option name="METHOD_NAME" value="MiscellaneousAppPackageAndActivityTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AppiumBasicTest.MiscellaneousTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="appium-mobile" />
       <extension name="coverage">
@@ -105,24 +123,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppiumE2ETest.scrollAndClickSomethingOnUltraLongMessageDialogAction" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="appium-mobile" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.AppiumE2ETest" />
-      <option name="METHOD_NAME" value="scrollAndClickSomethingOnUltraLongMessageDialogAction" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AppiumE2ETest.selectElementAndClickOkOnSingleChoiceListDialogAction" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="appium-mobile" />
       <extension name="coverage">
@@ -143,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AppiumBasicTest.MiscellaneousAppPackageAndActivityTest" />
         <item itemvalue="TestNG.AppiumBasicTest.MiscellaneousTest" />
         <item itemvalue="TestNG.AppiumE2ETest.entryUserAndPasswordAndClickOkOnRepeatAlarmDialogAction" />
         <item itemvalue="TestNG.AppiumE2ETest.checkElementsAndClickMultipleTimeOkOnRepeatAlarmDialogAction" />
         <item itemvalue="TestNG.AppiumE2ETest.selectElementAndClickOkOnSingleChoiceListDialogAction" />
-        <item itemvalue="TestNG.AppiumE2ETest.scrollAndClickSomethingOnUltraLongMessageDialogAction" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +170,7 @@
       <workItem from="1668727855697" duration="3844000" />
       <workItem from="1668816859120" duration="6081000" />
       <workItem from="1668829554716" duration="714000" />
-      <workItem from="1668905912156" duration="1682000" />
+      <workItem from="1668905912156" duration="2576000" />
     </task>
     <task id="LOCAL-00001" summary="initial message">
       <created>1667605630997</created>
@@ -249,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668827543571</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Miscellaneous testing">
+      <created>1668908842638</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668908842638</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +272,7 @@
     <MESSAGE value="swipe gesture" />
     <MESSAGE value="drag and drop gesture" />
     <MESSAGE value="e2e testing practice" />
-    <option name="LAST_COMMIT_MESSAGE" value="e2e testing practice" />
+    <MESSAGE value="Miscellaneous testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Miscellaneous testing" />
   </component>
 </project>
