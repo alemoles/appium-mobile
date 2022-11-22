@@ -50,7 +50,7 @@
       <recent name="D:\WORK\PROYECTOS\UDEMY\appium-mobile-testing\appium-mobile\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.EcommerceTest.scrollingTCTest">
+  <component name="RunManager" selected="TestNG.EcommerceTest.selectProductDynamicallyTCTest">
     <configuration name="AppiumBasicTest.MiscellaneousAppPackageAndActivityTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="appium-mobile" />
       <extension name="coverage">
@@ -62,24 +62,6 @@
       <option name="PACKAGE_NAME" value="com.devstromo" />
       <option name="MAIN_CLASS_NAME" value="com.devstromo.AppiumBasicTest" />
       <option name="METHOD_NAME" value="MiscellaneousAppPackageAndActivityTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppiumBasicTest.MiscellaneousTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="appium-mobile" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.AppiumBasicTest" />
-      <option name="METHOD_NAME" value="MiscellaneousTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -122,6 +104,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EcommerceTest.selectProductDynamicallyTCTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="appium-mobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.ecommerce" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.ecommerce.EcommerceTest" />
+      <option name="METHOD_NAME" value="selectProductDynamicallyTCTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EcommerceTest.verifyToastMessagesTCTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="appium-mobile" />
       <extension name="coverage">
@@ -142,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.EcommerceTest.selectProductDynamicallyTCTest" />
         <item itemvalue="TestNG.EcommerceTest.scrollingTCTest" />
         <item itemvalue="TestNG.EcommerceTest.verifyToastMessagesTCTest" />
         <item itemvalue="TestNG.EcommerceTest" />
         <item itemvalue="TestNG.AppiumBasicTest.MiscellaneousAppPackageAndActivityTest" />
-        <item itemvalue="TestNG.AppiumBasicTest.MiscellaneousTest" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +171,8 @@
       <workItem from="1668829554716" duration="714000" />
       <workItem from="1668905912156" duration="2873000" />
       <workItem from="1668964177834" duration="4418000" />
-      <workItem from="1669070496453" duration="1979000" />
+      <workItem from="1669070496453" duration="2376000" />
+      <workItem from="1669158238533" duration="1267000" />
     </task>
     <task id="LOCAL-00001" summary="initial message">
       <created>1667605630997</created>
@@ -278,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669071307636</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Test Case in scrolling and buy in Ecommerce app">
+      <created>1669072733485</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669072733485</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +306,7 @@
     <MESSAGE value="Miscellaneous app package &amp; app activity testing" />
     <MESSAGE value="Test Case in Filling in Ecommerce app" />
     <MESSAGE value="Test Case in check toast validation in Ecommerce app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Case in check toast validation in Ecommerce app" />
+    <MESSAGE value="Test Case in scrolling and buy in Ecommerce app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Case in scrolling and buy in Ecommerce app" />
   </component>
 </project>
