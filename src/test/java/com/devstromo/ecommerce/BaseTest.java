@@ -7,7 +7,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Duration;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.BeforeClass;
+
+import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
@@ -43,5 +46,18 @@ public class BaseTest {
         //start server
         service.start();
 
+    }
+
+    public void scrollToEndAction() {
+        boolean canScrollMore;
+        do {
+            canScrollMore = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture",
+                ImmutableMap.of("left", 100, "top", 100, "width", 200, "height", 200, "direction", "down", "percent", 3.0));
+
+        } while (canScrollMore);
+    }
+
+    public double getFormattedAmount(String amount) {
+        return Double.parseDouble(amount.substring(1));
     }
 }

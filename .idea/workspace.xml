@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4084ee35-0db8-4812-a982-dc9ed213314a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/devstromo/ecommerce/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devstromo/ecommerce/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/devstromo/ecommerce/EcommerceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devstromo/ecommerce/EcommerceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,25 +51,7 @@
       <recent name="D:\WORK\PROYECTOS\UDEMY\appium-mobile-testing\appium-mobile\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.EcommerceTest.selectProductDynamicallyTCTest">
-    <configuration name="AppiumBasicTest.MiscellaneousAppPackageAndActivityTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="appium-mobile" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.AppiumBasicTest" />
-      <option name="METHOD_NAME" value="MiscellaneousAppPackageAndActivityTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.EcommerceTest.validateTotalAmountTCTest">
     <configuration name="EcommerceTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="appium-mobile" />
       <extension name="coverage">
@@ -122,6 +105,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EcommerceTest.validateTotalAmountTCTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="appium-mobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.ecommerce" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.ecommerce.EcommerceTest" />
+      <option name="METHOD_NAME" value="validateTotalAmountTCTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EcommerceTest.verifyToastMessagesTCTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="appium-mobile" />
       <extension name="coverage">
@@ -142,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.EcommerceTest.validateTotalAmountTCTest" />
         <item itemvalue="TestNG.EcommerceTest.selectProductDynamicallyTCTest" />
         <item itemvalue="TestNG.EcommerceTest.scrollingTCTest" />
         <item itemvalue="TestNG.EcommerceTest.verifyToastMessagesTCTest" />
         <item itemvalue="TestNG.EcommerceTest" />
-        <item itemvalue="TestNG.AppiumBasicTest.MiscellaneousAppPackageAndActivityTest" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +173,8 @@
       <workItem from="1668905912156" duration="2873000" />
       <workItem from="1668964177834" duration="4418000" />
       <workItem from="1669070496453" duration="2376000" />
-      <workItem from="1669158238533" duration="1267000" />
+      <workItem from="1669158238533" duration="1518000" />
+      <workItem from="1669241559381" duration="3532000" />
     </task>
     <task id="LOCAL-00001" summary="initial message">
       <created>1667605630997</created>
@@ -286,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669072733485</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Test Case-Dynamically selecting Product by scanning list based on text in Ecommerce app">
+      <created>1669159742431</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669159742431</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +316,18 @@
     <MESSAGE value="Test Case in Filling in Ecommerce app" />
     <MESSAGE value="Test Case in check toast validation in Ecommerce app" />
     <MESSAGE value="Test Case in scrolling and buy in Ecommerce app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Case in scrolling and buy in Ecommerce app" />
+    <MESSAGE value="Test Case-Dynamically selecting Product by scanning list based on text in Ecommerce app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Case-Dynamically selecting Product by scanning list based on text in Ecommerce app" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/devstromo/ecommerce/EcommerceTest.java</url>
+          <line>151</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
