@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4084ee35-0db8-4812-a982-dc9ed213314a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/devstromo/ecommerce/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devstromo/ecommerce/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/devstromo/ecommerce/EcommerceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devstromo/ecommerce/EcommerceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +50,25 @@
       <recent name="D:\WORK\PROYECTOS\UDEMY\appium-mobile-testing\appium-mobile\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.EcommerceTest.validateGesturesTCTest">
+  <component name="RunManager" selected="TestNG.EcommerceTest.handleWebViewTCTest">
+    <configuration name="EcommerceTest.handleWebViewTCTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="appium-mobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.ecommerce" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.ecommerce.EcommerceTest" />
+      <option name="METHOD_NAME" value="handleWebViewTCTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EcommerceTest.scrollingTCTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="appium-mobile" />
       <extension name="coverage">
@@ -124,31 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EcommerceTest.verifyToastMessagesTCTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="appium-mobile" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.ecommerce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.ecommerce" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.ecommerce.EcommerceTest" />
-      <option name="METHOD_NAME" value="verifyToastMessagesTCTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.EcommerceTest.handleWebViewTCTest" />
         <item itemvalue="TestNG.EcommerceTest.validateGesturesTCTest" />
         <item itemvalue="TestNG.EcommerceTest.validateTotalAmountTCTest" />
         <item itemvalue="TestNG.EcommerceTest.selectProductDynamicallyTCTest" />
         <item itemvalue="TestNG.EcommerceTest.scrollingTCTest" />
-        <item itemvalue="TestNG.EcommerceTest.verifyToastMessagesTCTest" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +175,7 @@
       <workItem from="1669070496453" duration="2376000" />
       <workItem from="1669158238533" duration="1518000" />
       <workItem from="1669241559381" duration="3708000" />
-      <workItem from="1669331647437" duration="688000" />
+      <workItem from="1669331647437" duration="2102000" />
     </task>
     <task id="LOCAL-00001" summary="initial message">
       <created>1667605630997</created>
@@ -304,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669246711364</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Validating Mobile Gestures of App in Ecommerce app">
+      <created>1669332347090</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1669332347090</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,6 +335,7 @@
     <MESSAGE value="Test Case in scrolling and buy in Ecommerce app" />
     <MESSAGE value="Test Case-Dynamically selecting Product by scanning list based on text in Ecommerce app" />
     <MESSAGE value="TestCase - Validating Total amount generated functionality in Ecommerce app" />
-    <option name="LAST_COMMIT_MESSAGE" value="TestCase - Validating Total amount generated functionality in Ecommerce app" />
+    <MESSAGE value="Validating Mobile Gestures of App in Ecommerce app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validating Mobile Gestures of App in Ecommerce app" />
   </component>
 </project>
