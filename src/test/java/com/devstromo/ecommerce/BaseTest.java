@@ -8,6 +8,8 @@ import java.nio.file.Paths;
 import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.annotations.BeforeClass;
 
 import com.google.common.collect.ImmutableMap;
@@ -59,5 +61,10 @@ public class BaseTest {
 
     public double getFormattedAmount(String amount) {
         return Double.parseDouble(amount.substring(1));
+    }
+
+    public void longPressAction(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("mobile: longClickGesture",
+            ImmutableMap.of("elementId", ((RemoteWebElement) element).getId(), "duration", 2000));
     }
 }
