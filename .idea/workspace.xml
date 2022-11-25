@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4084ee35-0db8-4812-a982-dc9ed213314a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/chromedriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/devstromo/ecommerce/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devstromo/ecommerce/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/devstromo/ecommerce/EcommerceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devstromo/ecommerce/EcommerceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,21 +34,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/UDEMY/appium-mobile-testing/appium-mobile/src/test/resources&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/UDEMY/appium-mobile-testing/appium-mobile/src/test",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\UDEMY\appium-mobile-testing\appium-mobile\src\test" />
+      <recent name="D:\WORK\PROYECTOS\UDEMY\appium-mobile-testing\appium-mobile\src\test\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\WORK\PROYECTOS\UDEMY\appium-mobile-testing\appium-mobile\src\test\resources" />
     </key>
   </component>
@@ -175,7 +181,7 @@
       <workItem from="1669070496453" duration="2376000" />
       <workItem from="1669158238533" duration="1518000" />
       <workItem from="1669241559381" duration="3708000" />
-      <workItem from="1669331647437" duration="2102000" />
+      <workItem from="1669331647437" duration="3235000" />
     </task>
     <task id="LOCAL-00001" summary="initial message">
       <created>1667605630997</created>
@@ -310,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669332347090</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Handling Web View in Ecommerce app">
+      <created>1669333852629</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1669333852629</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,6 +349,7 @@
     <MESSAGE value="Test Case-Dynamically selecting Product by scanning list based on text in Ecommerce app" />
     <MESSAGE value="TestCase - Validating Total amount generated functionality in Ecommerce app" />
     <MESSAGE value="Validating Mobile Gestures of App in Ecommerce app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Validating Mobile Gestures of App in Ecommerce app" />
+    <MESSAGE value="Handling Web View in Ecommerce app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Handling Web View in Ecommerce app" />
   </component>
 </project>

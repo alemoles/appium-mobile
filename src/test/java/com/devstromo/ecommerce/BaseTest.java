@@ -28,6 +28,7 @@ public class BaseTest {
     public void ConfigureApp() throws MalformedURLException {
         Path resourceDirectory = Paths.get("src", "test", "resources");
         File file = new File(resourceDirectory + "/General-Store.apk");
+        File chromeDriver = new File(resourceDirectory + "/chromedriver.exe");
         String basePath = System.getenv("APPDATA")
             .replace("\\", "//");
         // AndroidDriver
@@ -35,6 +36,8 @@ public class BaseTest {
         UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName("Nexus 5 API 24");
         options.setApp(file.getAbsolutePath());
+
+        options.setChromedriverExecutable(chromeDriver.getAbsolutePath());
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
         driver.manage()
